@@ -43,18 +43,15 @@ const goDictionary = () => router.push("/dictionary" as any);
           <Text style={styles.cardSub}>Back to login</Text>
         </TouchableOpacity>
 
-        
-
         <TouchableOpacity style={styles.card} onPress={goBored}>
-          <Text style={styles.cardTitle}>Bored API</Text>
+          <Text style={styles.cardTitle}>Bored!!</Text>
           <Text style={styles.cardSub}>Random activity</Text>
         </TouchableOpacity>
 
         <TouchableOpacity style={styles.card} onPress={goDictionary}>
-  <Text style={styles.cardTitle}>Dictionary</Text>
-  <Text style={styles.cardSub}>Search word meanings</Text>
-</TouchableOpacity>
-
+          <Text style={styles.cardTitle}>Dictionary</Text>
+          <Text style={styles.cardSub}>Search word meanings</Text>
+        </TouchableOpacity>
 
       </View>
     </View>
