@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "514775926907",
+    "project_id": "newscreenproj",
+    "storage_bucket": "newscreenproj.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:514775926907:android:641ee17f3ea1c3181a3ade",
+        "android_client_info": {
+          "package_name": "com.saas360.screen"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFf-CO9pHzQM0u2K3l41NBheuI8ACCQ7w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
