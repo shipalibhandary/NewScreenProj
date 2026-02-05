@@ -9,7 +9,6 @@ export default function Login() {
   const [password, setPassword] = useState("");
 
   const handleLogin = () => {
-    // UI only – no backend
     router.replace("/(tabs)");
   };
 

@@ -20,7 +20,7 @@ export default function Profile() {
         <Text style={styles.value}>9996543210</Text>
       </View>
 
-      {/* Edit Button (UI only) */}
+      
       <TouchableOpacity
         style={styles.button}
         onPress={() => alert("Edit Profile (UI only)")}
@@ -50,7 +50,6 @@ const styles = StyleSheet.create({
     
   },
 
-  /* Card */
   card: {
     width: "70%",              
     backgroundColor: "#e3eafa",
@@ -69,7 +68,6 @@ const styles = StyleSheet.create({
     marginTop: 4,
   },
 
-  /* Button */
   button: {
     width: "70%",              
     backgroundColor: "#fac4cd",
