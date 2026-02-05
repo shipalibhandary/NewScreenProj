@@ -1,27 +1,50 @@
+import * as Notifications from "expo-notifications";
 import { useRouter } from "expo-router";
+import { useEffect } from "react";
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
 export default function Home() {
   const router = useRouter();
 
+  const getDeviceToken = async () => {
+    const { status: existingStatus } = await Notifications.getPermissionsAsync();
+    let finalStatus = existingStatus;
+
+    if (existingStatus !== "granted") {
+      const { status } = await Notifications.requestPermissionsAsync();
+      finalStatus = status;
+    }
+
+    if (finalStatus !== "granted") {
+      alert("Notification permission not granted");
+      return;
+    }
+
+    const expoToken = (await Notifications.getExpoPushTokenAsync()).data;
+    console.log("Expo Push Token:", expoToken);
+
+    const deviceToken = (await Notifications.getDevicePushTokenAsync()).data;
+    console.log("Device Token:", deviceToken);
+  };
+
+  useEffect(() => {
+    getDeviceToken();
+  }, []);
+
   const goProfile = () => router.push("/profile" as any);
-  const goSettings = () => alert("Settings )");
-  const goAbout = () => alert("About )");
+  const goSettings = () => alert("Settings");
+  const goAbout = () => alert("About");
   const logout = () => router.replace("/login");
-const goBored = () => router.push("/bored" as any);
-const goDictionary = () => router.push("/dictionary" as any);
-
-
+  const goBored = () => router.push("/bored" as any);
+  const goDictionary = () => router.push("/dictionary" as any);
 
   return (
     <View style={styles.container}>
-      {/* Header */}
       <View style={styles.header}>
         <Text style={styles.appName}>My App</Text>
         <Text style={styles.welcome}>Hi, User</Text>
       </View>
 
-      {/* Cards */}
       <View style={styles.grid}>
         <TouchableOpacity style={styles.card} onPress={goProfile}>
           <Text style={styles.cardTitle}>Profile</Text>
@@ -52,7 +75,6 @@ const goDictionary = () => router.push("/dictionary" as any);
           <Text style={styles.cardTitle}>Dictionary</Text>
           <Text style={styles.cardSub}>Search word meanings</Text>
         </TouchableOpacity>
-
       </View>
     </View>
   );
@@ -66,12 +88,10 @@ const styles = StyleSheet.create({
     borderRadius: 12,
     backgroundColor: "#f2e0e3",
     marginBottom: 18,
-    marginTop:50,
-
+    marginTop: 50,
   },
   appName: { fontSize: 22, fontWeight: "bold" },
   welcome: { marginTop: 6, fontSize: 16, color: "#555" },
-
   grid: {
     flexDirection: "row",
     flexWrap: "wrap",

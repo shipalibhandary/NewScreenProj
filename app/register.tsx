@@ -21,7 +21,6 @@ export default function Register() {
       return;
     }
 
-    // UI only – no backend
     Alert.alert("Success", "Registered successfully!");
     router.replace("/login");
   };
@@ -85,8 +84,8 @@ const styles = StyleSheet.create({
     textAlign: "center",
   },
   input: {
-    width: "80%",          // smaller width
-    alignSelf: "center",   // centered
+    width: "80%",          
+    alignSelf: "center",   
     borderWidth: 1,
     borderColor: "#ccc",
     borderRadius: 8,
