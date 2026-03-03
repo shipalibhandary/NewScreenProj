@@ -19,3 +19,19 @@ Displays:
   - Word meaning
   - Definitions
 - Displays results dynamically
+
+# 🛠️ Technologies Used
+- React Native
+- Expo CLI
+- Public REST APIs
+
+# APIs Used
+1. Bored API
+Provides random activity suggestions.
+Example Endpoint:
+  https://www.boredapi.com/api/activity
+
+2. Dictionary API
+Provides word definitions.
+Example Endpoint:
+  https://api.dictionaryapi.dev/api/v2/entries/en/<word>
