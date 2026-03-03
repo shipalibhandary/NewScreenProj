@@ -6,7 +6,9 @@ This project was built to practice API integration, React Native components, and
 
 ## 🚀 Features
 1. Bored API Integration
+
 Fetches random activity suggestions
+
 Displays:
 - Activity name
 - Type of activity
@@ -29,11 +31,13 @@ Displays:
 1. Bored API
 
 Provides random activity suggestions.
+
 Example Endpoint:
   https://www.boredapi.com/api/activity
 
 3. Dictionary API
 
 Provides word definitions.
+
 Example Endpoint:
   https://api.dictionaryapi.dev/api/v2/entries/en/<word>
