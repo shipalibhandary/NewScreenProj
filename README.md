@@ -56,3 +56,7 @@ git clone https://github.com/your-username/NewScreenProj.git
 ```
 cd NewScreenProj
 ```
+3. Install dependencies:
+```
+npm install
+```
