@@ -64,3 +64,4 @@ npm install
 ```
 npx expo start
 ```
+5. Scan the QR code using Expo Go app on your mobile device.
