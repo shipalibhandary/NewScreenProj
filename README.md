@@ -67,6 +67,10 @@ npx expo start
 5. Scan the QR code using Expo Go app on your mobile device.
 
 # 🧠 Learning Outcomes
+- Understanding API integration in React Native
+- Managing component state using useState
+- Rendering dynamic UI based on API responses
+- Basic mobile app UI structuring
 
 # 👩‍💻 Author
 
