@@ -41,3 +41,8 @@ Provides word definitions.
 
 Example Endpoint:
   https://api.dictionaryapi.dev/api/v2/entries/en/<word>
+
+# Screens
+- Home Screen
+- Bored Activity Screen
+- Dictionary Search Screen
