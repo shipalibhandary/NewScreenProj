@@ -66,6 +66,8 @@ npx expo start
 ```
 5. Scan the QR code using Expo Go app on your mobile device.
 
+# 🧠 Learning Outcomes
+
 # 👩‍💻 Author
 
 Developed as a learning project to understand React Native and API integration.
