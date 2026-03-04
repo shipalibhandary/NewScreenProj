@@ -52,3 +52,7 @@ Example Endpoint:
 ```
 git clone https://github.com/your-username/NewScreenProj.git
 ```
+2. Navigate to project folder:
+```
+cd NewScreenProj
+```
