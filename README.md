@@ -60,3 +60,7 @@ cd NewScreenProj
 ```
 npm install
 ```
+4. Start the development server:
+```
+npx expo start
+```
