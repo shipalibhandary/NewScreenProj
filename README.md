@@ -46,3 +46,5 @@ Example Endpoint:
 - Home Screen
 - Bored Activity Screen
 - Dictionary Search Screen
+
+# ⚙️ Installation & Setup
